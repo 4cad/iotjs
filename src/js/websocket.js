@@ -110,6 +110,7 @@ function parseServerHandshakeData(data, client, server) {
     client._socket.write(response);
     server.emit('open', client);
   } else {
+    console.log('BAD REQUEST');
     response = method[2] + ' 400 Bad Request';
     client._socket.write(response);
   }

@@ -1,0 +1,116 @@
+=================================================================
+==24973== ERROR: AddressSanitizer: heap-buffer-overflow on address 0xb5e00530 at pc 0xb61aece0 bp 0xbffaf808 sp 0xbffaf3e8
+WRITE of size 15 at 0xb5e00530 thread T0
+    #0 0xb61aecdf (/usr/lib/i386-linux-gnu/libasan.so.0.0.0+0xdcdf)
+    #1 0x8079bc7 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8079bc7)
+    #2 0x807a958 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x807a958)
+    #3 0x80f91c7 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80f91c7)
+    #4 0x8151a9e (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8151a9e)
+    #5 0x816065b (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x816065b)
+    #6 0x8160ea3 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8160ea3)
+    #7 0x80f8fb0 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80f8fb0)
+    #8 0x8151a9e (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8151a9e)
+    #9 0x816065b (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x816065b)
+    #10 0x8160ea3 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8160ea3)
+    #11 0x80f8fb0 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80f8fb0)
+    #12 0x80bf121 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80bf121)
+    #13 0x80bea79 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80bea79)
+    #14 0x80ee8de (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80ee8de)
+    #15 0x80eeb02 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80eeb02)
+    #16 0x80f8b28 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80f8b28)
+    #17 0x8151a9e (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8151a9e)
+    #18 0x816065b (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x816065b)
+    #19 0x8160ea3 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8160ea3)
+    #20 0x80f8fb0 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80f8fb0)
+    #21 0x8151a9e (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8151a9e)
+    #22 0x816065b (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x816065b)
+    #23 0x8160ea3 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8160ea3)
+    #24 0x80f8fb0 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80f8fb0)
+    #25 0x8151a9e (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8151a9e)
+    #26 0x816065b (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x816065b)
+    #27 0x8160ea3 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8160ea3)
+    #28 0x80f8fb0 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80f8fb0)
+    #29 0x80bf3be (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80bf3be)
+    #30 0x80bea94 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80bea94)
+    #31 0x80ee8de (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80ee8de)
+    #32 0x80eeb02 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80eeb02)
+    #33 0x80f8b28 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80f8b28)
+    #34 0x8151a9e (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8151a9e)
+    #35 0x816065b (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x816065b)
+    #36 0x8160ea3 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8160ea3)
+    #37 0x80f8fb0 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80f8fb0)
+    #38 0x8084dd6 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8084dd6)
+    #39 0x8084e93 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8084e93)
+    #40 0x805faa7 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x805faa7)
+    #41 0x805fa10 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x805fa10)
+    #42 0x807359a (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x807359a)
+    #43 0x817e75c (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x817e75c)
+    #44 0x817edb7 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x817edb7)
+    #45 0x818c27d (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x818c27d)
+    #46 0x8167d40 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8167d40)
+    #47 0x805ef2c (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x805ef2c)
+    #48 0x805f22d (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x805f22d)
+    #49 0x805e907 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x805e907)
+    #50 0xb5f9eaf2 (/lib/i386-linux-gnu/libc-2.19.so+0x19af2)
+    #51 0x805e810 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x805e810)
+0xb5e0053e is located 0 bytes to the right of 14-byte region [0xb5e00530,0xb5e0053e)
+allocated by thread T0 here:
+    #0 0xb61b7905 (/usr/lib/i386-linux-gnu/libasan.so.0.0.0+0x16905)
+    #1 0x806164a (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x806164a)
+    #2 0x8079b6d (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8079b6d)
+    #3 0x807a958 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x807a958)
+    #4 0x80f91c7 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80f91c7)
+    #5 0x8151a9e (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8151a9e)
+    #6 0x816065b (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x816065b)
+    #7 0x8160ea3 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8160ea3)
+    #8 0x80f8fb0 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80f8fb0)
+    #9 0x8151a9e (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8151a9e)
+    #10 0x816065b (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x816065b)
+    #11 0x8160ea3 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8160ea3)
+    #12 0x80f8fb0 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80f8fb0)
+    #13 0x80bf121 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80bf121)
+    #14 0x80bea79 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80bea79)
+    #15 0x80ee8de (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80ee8de)
+    #16 0x80eeb02 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80eeb02)
+    #17 0x80f8b28 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80f8b28)
+    #18 0x8151a9e (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8151a9e)
+    #19 0x816065b (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x816065b)
+    #20 0x8160ea3 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8160ea3)
+    #21 0x80f8fb0 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80f8fb0)
+    #22 0x8151a9e (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8151a9e)
+    #23 0x816065b (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x816065b)
+    #24 0x8160ea3 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8160ea3)
+    #25 0x80f8fb0 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80f8fb0)
+    #26 0x8151a9e (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8151a9e)
+    #27 0x816065b (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x816065b)
+    #28 0x8160ea3 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x8160ea3)
+    #29 0x80f8fb0 (/home/dev/iotjs/build/i686-linux/debug/bin/iotjs+0x80f8fb0)
+Shadow bytes around the buggy address:
+  0x36bc0050: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x36bc0060: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x36bc0070: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x36bc0080: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x36bc0090: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+=>0x36bc00a0: fa fa fa fa fa fa[00]06 fa fa 00 07 fa fa fd fa
+  0x36bc00b0: fa fa fd fa fa fa fd fa fa fa fd fa fa fa fd fa
+  0x36bc00c0: fa fa fd fa fa fa fd fd fa fa fd fa fa fa fd fd
+  0x36bc00d0: fa fa fd fd fa fa fd fd fa fa fd fd fa fa fd fa
+  0x36bc00e0: fa fa fd fd fa fa fd fa fa fa fd fa fa fa fd fa
+  0x36bc00f0: fa fa fd fa fa fa fd fa fa fa fd fa fa fa 00 04
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:     fa
+  Heap righ redzone:     fb
+  Freed Heap region:     fd
+  Stack left redzone:    f1
+  Stack mid redzone:     f2
+  Stack right redzone:   f3
+  Stack partial redzone: f4
+  Stack after return:    f5
+  Stack use after scope: f8
+  Global redzone:        f9
+  Global init order:     f6
+  Poisoned by user:      f7
+  ASan internal:         fe
+==24973== ABORTING
